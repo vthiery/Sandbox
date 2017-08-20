@@ -1,0 +1,26 @@
+[settings]
+
+
+[requires]
+    jsonformoderncpp/2.Y.Z
+
+[options]
+
+
+[full_settings]
+
+
+[full_requires]
+    jsonformoderncpp/2.1.1@vthiery/stable:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+
+[full_options]
+    jsonformoderncpp:path=
+
+[scope]
+    dev=True
+
+[recipe_hash]
+
+
+[env]
+
