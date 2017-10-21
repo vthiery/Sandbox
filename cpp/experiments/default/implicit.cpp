@@ -1,5 +1,15 @@
 #include <iostream>
-#include "implicit.hpp"
+
+class A
+{
+public:
+    virtual ~A() = default;
+};
+
+class B : public A
+{
+
+};
 
 int main()
 {

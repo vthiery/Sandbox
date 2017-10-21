@@ -1,4 +1,4 @@
-
+#include <iostream>
 
 class ConstThingy
 {
@@ -26,5 +26,16 @@ constexpr int ConstThingy::someVar() const noexcept
 constexpr unsigned int ConstThingy::someVarSquared() const noexcept
 {
     return static_cast<unsigned int>(m_someVar * m_someVar);
+}
+
+int main()
+{
+    std::cout << "Welcome to your beloved sandbox!" << std::endl;
+
+    ConstThingy c{ -2 };
+    std::cout << c.someVar() << std::endl;
+    std::cout << c.someVarSquared() << std::endl;
+
+    return 0;
 }
 
