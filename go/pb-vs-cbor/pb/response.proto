@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package edgelab.adam.v1;
+
+import "run.proto";
+
+message Response {
+  string status = 1;
+  string error = 2;
+  string timestamp = 3;
+  string asset = 4;
+  string currency = 5;
+  Run run = 6;
+  map<string, double> results = 7;
+}

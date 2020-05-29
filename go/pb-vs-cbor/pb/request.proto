@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package edgelab.adam.v1;
+
+import "run.proto";
+
+message Request {
+  Run run = 1;
+  string asset = 2;
+  repeated uint32 scenarios = 3;
+  repeated string currencies = 4;
+}

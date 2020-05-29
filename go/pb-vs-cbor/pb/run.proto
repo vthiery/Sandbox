@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package edgelab.adam.v1;
+
+message Run {
+  uint32 id = 1;
+  string date = 2;
+  string keyspace = 3;
+}
