@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  cassandra:
+    image: cassandra:3.11.3
+    volumes:
+      - .:/exec:ro
+    command: /exec/wrapped_exec.sh
+    ports:
+      - 9042:9042
